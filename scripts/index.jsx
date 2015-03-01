@@ -3,4 +3,4 @@
 var React = require('react'),
     App = require('./app');
 
-React.render(<App />, document.body);
+React.render(<App cat={1} txt='React is awesome' />, document.body);
