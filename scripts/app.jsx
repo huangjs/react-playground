@@ -13,13 +13,16 @@ require('../styles/main.css');
 //var App = require('./ChildProps');
 //React.render(<App />, document.body);
 
-var App = require('./Mount');
-React.render(
-    <div>
-        <button onClick={window.render}>Render</button>
-        <button onClick={window.unmount}>Unmount</button>
-        <hr />
-        <div id="panel"></div>
-    </div>,
-    document.body
-);
+//var App = require('./Mount');
+//React.render(
+//    <div>
+//        <button onClick={window.render}>Render</button>
+//        <button onClick={window.unmount}>Unmount</button>
+//        <hr />
+//        <div id="panel"></div>
+//    </div>,
+//    document.body
+//);
+
+var App = require('./Mixins');
+React.render(<App />, document.getElementById('app'));
