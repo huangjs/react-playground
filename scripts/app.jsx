@@ -4,16 +4,16 @@ var React = require('react');
 
 require('../styles/main.css');
 
-//var App = require('./StateProps');
+//var App = require('./examples/StateProps');
 //React.render(<App cat={1} txt='React is awesome' />, document.body);
 
-//var App = require('./Refs');
+//var App = require('./examples/Refs');
 //React.render(<App />, document.body);
 
-//var App = require('./ChildProps');
+//var App = require('./examples/ChildProps');
 //React.render(<App />, document.body);
 
-//var App = require('./Mount');
+//var App = require('./examples/Mount');
 //React.render(
 //    <div>
 //        <button onClick={window.render}>Render</button>
@@ -24,5 +24,9 @@ require('../styles/main.css');
 //    document.body
 //);
 
-var App = require('./Mixins');
+//var App = require('./examples/Mixins');
+//React.render(<App />, document.getElementById('app'));
+
+var App = require('./examples/ComposableComponent.jsx');
 React.render(<App />, document.getElementById('app'));
+
