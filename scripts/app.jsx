@@ -27,6 +27,8 @@ require('../styles/main.css');
 //var App = require('./examples/Mixins');
 //React.render(<App />, document.getElementById('app'));
 
-var App = require('./examples/ComposableComponent.jsx');
-React.render(<App />, document.getElementById('app'));
+//var App = require('./examples/ComposableComponent.jsx');
+//React.render(<App />, document.getElementById('app'));
 
+var App = require('./examples/PersonTable.jsx');
+React.render(<App />, document.getElementById('app'));
