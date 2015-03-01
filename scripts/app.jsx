@@ -18,12 +18,24 @@ var App = React.createClass({
         };
     },
 
+    getInitialState() {
+        return {
+            txt: 'this is my initial state',
+            id: 0
+        }
+    },
+
+    updateTxt(input) {
+        this.setState({txt: input.target.value})
+    },
+
     render() {
-        console.log(this.props.txt);
+        //console.log(this.props.txt);
         return (
             <div>
                 <h1>{this.props.txt}</h1>
-                <b>bold</b>
+                <input type="text" onChange={this.updateTxt}/>
+                <h1>{this.state.txt}</h1>
             </div>
 
             //<div>
