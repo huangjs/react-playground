@@ -1,0 +1,27 @@
+{
+  "name": "demo2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.6.0",
+    "webpack-dev-server": "1.7.0"
+  },
+  "dependencies": {
+    "react": "^0.12.2"
+  }
+}
