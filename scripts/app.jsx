@@ -33,5 +33,8 @@ require('../styles/main.css');
 //var App = require('./examples/PersonTable.jsx');
 //React.render(<App />, document.getElementById('app'));
 
-var App = require('./examples/JSXCompiler.jsx');
+//var App = require('./examples/JSXCompiler.jsx');
+//React.render(<App />, document.getElementById('app'));
+
+var App = require('./examples/ReactLink.jsx');
 React.render(<App />, document.getElementById('app'));
