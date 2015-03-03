@@ -12,41 +12,41 @@ var Column = FixedDataTable.Column;
 
 // Table data as a list of array.
 var rows = [
-    ['a1', 'b1', 'c1'],
-    ['a2', 'b3', 'c2'],
-    ['a3', 'b3', 'c3']
-    /// and more
+  ['a1', 'b1', 'c1'],
+  ['a2', 'b3', 'c2'],
+  ['a3', 'b3', 'c3']
+  /// and more
 ];
 
 function rowGetter(rowIndex) {
-    return rows[rowIndex];
+  return rows[rowIndex];
 }
 
 var TableDemo = React.createClass({
-    render: function () {
-        return (
-            <div className="TableDemo">
-                <Table
-                    rowHeight={50}
-                    rowGetter={rowGetter}
-                    rowsCount={rows.length}
-                    width={500}
-                    height={500}
-                    headerHeight={50}>
-                    <Column
-                        label="Col 1"
-                        width={300}
-                        dataKey={0}
-                    />
-                    <Column
-                        label="Col 2"
-                        width={200}
-                        dataKey={1}
-                    />
-                </Table>
-            </div>
-        )
-    }
+  render: function () {
+    return (
+      <div className="TableDemo">
+        <Table
+          rowHeight={50}
+          rowGetter={rowGetter}
+          rowsCount={rows.length}
+          width={500}
+          height={500}
+          headerHeight={50}>
+          <Column
+            label="Col 1"
+            width={300}
+            dataKey={0}
+          />
+          <Column
+            label="Col 2"
+            width={200}
+            dataKey={1}
+          />
+        </Table>
+      </div>
+    )
+  }
 });
 
 module.exports = TableDemo;
