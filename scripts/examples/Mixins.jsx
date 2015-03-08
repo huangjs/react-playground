@@ -27,6 +27,7 @@ var App = React.createClass({
 
 var ButtonComponent = React.createClass({
     mixins: [ReactMixin],
+
     render: function () {
         return (
             <div className="ButtonComponent">
